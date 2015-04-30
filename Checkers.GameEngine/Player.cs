@@ -141,7 +141,7 @@ namespace Checkers.GameEngine
             }
             this.LightPoints = p;
         }
-
+        //Можна створити змінну isBeat в конструкції else
         private void SecondClick(Point p, out bool isCangeChecker, out bool wasBeat)
         {
             _isCorrect = false;

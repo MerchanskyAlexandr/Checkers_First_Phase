@@ -27,6 +27,7 @@ namespace Checkers.GameEngine
 
         #endregion
 
+        //Зайвий return
         public void Move()
         {
             Random rnd = new Random();

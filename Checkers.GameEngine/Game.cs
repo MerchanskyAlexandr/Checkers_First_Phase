@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+// змінити назву namespace за допомогою properties
 namespace Checkers.GameEngine
 {
     public class Game
@@ -54,6 +54,7 @@ namespace Checkers.GameEngine
 
         public Game(GameType typeOfGame)
         {
+
             this._desk = new Desk();
             this._desk.StartPosition();
             this._typeOfGame = typeOfGame;

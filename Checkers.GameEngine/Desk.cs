@@ -22,6 +22,8 @@ namespace Checkers.GameEngine
 
         public Desk()
         {
+            // краще замість for (int i = 5; i < 8; i++) написати for (int i = 5; i < _cells.GetLength(0); i++)
+            // і замість for (int j = 0; j < 8; j++) написати (int i = 5; i < _cells.GetLength(1); i++)
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
@@ -64,7 +66,8 @@ namespace Checkers.GameEngine
                     }
                 }
             }
-
+            // краще замість for (int i = 5; i < 8; i++) написати for (int i = 5; i < _cells.GetLength(0); i++)
+            // і замість for (int j = 0; j < 8; j++) написати (int i = 5; i < _cells.GetLength(1); i++)
             for (int i = 5; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
@@ -120,7 +123,7 @@ namespace Checkers.GameEngine
                 chD.Status = CheckerStatus.King; //Black KING
             }
         }
-
+        //Можна було використати конструкцію if, else if, else
         public List<Point> IsToSimpleBit(CheckerOnDesk chD)
         {
             List<Point> points = new List<Point>();
@@ -149,7 +152,7 @@ namespace Checkers.GameEngine
 
             return points;
         }
-
+        // цей метод краще поділити на кілька методів
         public List<Point> IsToKingBit(CheckerOnDesk chD)
         {
             List<Point> points = new List<Point>();
@@ -216,7 +219,7 @@ namespace Checkers.GameEngine
         {
             return (chD.Status == CheckerStatus.Simple) ? IsToSimpleBit(chD) : IsToKingBit(chD);
         }
-
+        //Можна було переробити у linq-expression цикл foreach
         public List<CheckerOnDesk> CheckersHaveToBit(ColorType color)
         {
             List<CheckerOnDesk> list1 = new List<CheckerOnDesk>();
@@ -232,7 +235,7 @@ namespace Checkers.GameEngine
             }
             return list1;
         }
-
+        //Можна було переробити у linq-expression цикл foreach
         public List<CheckerOnDesk> ChekersToMove(ColorType color)
         {
             List<CheckerOnDesk> list1 = new List<CheckerOnDesk>();
