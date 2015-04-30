@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using Checkers.GameEngine;
 using System.Drawing;
 using System.IO;
-
+//Rename Checkers to Checkers.ConsoleUI
 namespace Checkers
 {
     class Program
     {
+        //Додати класи і методи реалізації в консолі, і запустити їх в Main
         static void Main(string[] args)
         {
             string messageEndGame;
@@ -24,7 +25,6 @@ namespace Checkers
 
             typeOfGame = EnterTypeOfGame();
             Game game = new Game(typeOfGame);
-
             if (typeOfGame == GameType.SinglePlayer)
             {
                 while (!game.IsExit(out messageEndGame))

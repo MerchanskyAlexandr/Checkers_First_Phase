@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Checkers.GameEngine
 {
+    //Enum можна було вивести в окремий клас з енумами
     public enum ColorType
     {
         White = 1,
