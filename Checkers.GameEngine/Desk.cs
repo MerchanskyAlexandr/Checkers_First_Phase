@@ -24,6 +24,11 @@ namespace Checkers.GameEngine
         {
             // краще замість for (int i = 5; i < 8; i++) написати for (int i = 5; i < _cells.GetLength(0); i++)
             // і замість for (int j = 0; j < 8; j++) написати (int i = 5; i < _cells.GetLength(1); i++)
+            /*			
+			    Review VV:
+			        цілком погоджуюся з коментарем вище
+                    краще не використовувати "магічні числа"
+		    */
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
@@ -80,7 +85,10 @@ namespace Checkers.GameEngine
                     }
                 }
             }
-
+            /*			
+			    Review VV:
+			        що означає наступний рядок коду?
+		    */
             // for testing
             _cells[2, 2] = 0; _cells[2, 2] = -1;
             _checkersOnDesk.Remove(GetCheckerOnDesk(new Point(2, 2))); 

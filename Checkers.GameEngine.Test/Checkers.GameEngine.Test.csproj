@@ -36,9 +36,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GameEngine">
-      <HintPath>..\..\GameEngine\GameEngine\bin\Debug\GameEngine.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
   </ItemGroup>
@@ -62,6 +59,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CheckerOnDeskTest.cs" />
     <Compile Include="DeskTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Checkers.GameEngine\Checkers.GameEngine.csproj">
+      <Project>{c8e7477e-ed36-4ce8-a25b-8d85629bb2d3}</Project>
+      <Name>Checkers.GameEngine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
