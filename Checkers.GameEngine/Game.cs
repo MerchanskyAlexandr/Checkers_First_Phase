@@ -87,7 +87,12 @@ namespace Checkers.GameEngine
                 ChangeCurrentPlayer();
             }
         }
-
+        /*			
+			Review VV:
+			    краще не повертати текстових повідомлень із функції
+                у ситуації, коли необхідна локалізація на кілька мов, 
+                такий підхід не буде працювати
+		*/
         public void RunGameWithComputer(Point point, out string message)
         {
             _whitePlayer.Move(point);
