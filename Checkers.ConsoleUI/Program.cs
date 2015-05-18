@@ -13,11 +13,8 @@ namespace Checkers
     {
         static void Main(string[] args)
         {
-            string messageEndGame;
-            string messageMove = "White Player is moving";
             GameType typeOfGame;
             Player currentPlayer;
-            string message;
 
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.ForegroundColor = ConsoleColor.Black;

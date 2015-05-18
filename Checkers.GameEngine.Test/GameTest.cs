@@ -62,7 +62,6 @@ namespace Checkers.GameEngine.Test
         {
             Game game = new Game(GameType.SinglePlayer);
             Point p = new Point(2, 0);
-            string s;
             game.RunGameWithComputer(p);
             List<Point> points = new List<Point> { new Point(3, 1) };
             Assert.IsTrue(game.WhitePlayer.LightPoints.SequenceEqual(points));
@@ -78,7 +77,6 @@ namespace Checkers.GameEngine.Test
             Game game = new Game(GameType.SinglePlayer);
 
             game.GameDesk.GetCheckersOnDesks.Clear();
-            string s;
 
             Assert.IsTrue(game.IsExit() == true);
         }
