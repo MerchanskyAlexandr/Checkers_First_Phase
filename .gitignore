@@ -1,0 +1,9 @@
+/TestResults
+**/bin/
+**/obj/
+**/Express/
+**/Release/
+**/Debug/
+*.suo
+*.user
+*.dbmdl

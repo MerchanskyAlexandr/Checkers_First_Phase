@@ -41,15 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Checker.cs" />
-    <Compile Include="CheckerOnDesk.cs" />
-    <Compile Include="CheckerStatus.cs" />
-    <Compile Include="ColorType.cs" />
-    <Compile Include="ComputerIntelect.cs" />
-    <Compile Include="Desk.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="GameType.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="GameLogic\Checker.cs" />
+    <Compile Include="GameLogic\CheckerOnDesk.cs" />
+    <Compile Include="Enums\CheckerStatus.cs" />
+    <Compile Include="Enums\ColorType.cs" />
+    <Compile Include="GameLogic\ComputerIntelect.cs" />
+    <Compile Include="GameLogic\Desk.cs" />
+    <Compile Include="GameLogic\Game.cs" />
+    <Compile Include="Enums\GameType.cs" />
+    <Compile Include="GameLogic\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

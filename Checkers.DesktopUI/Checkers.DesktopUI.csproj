@@ -45,23 +45,83 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="GameTuning\Colors.cs" />
+    <Compile Include="Forms\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CheckerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CheckerForm.Designer.cs">
+      <DependentUpon>CheckerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucChecker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucChecker.Designer.cs">
+      <DependentUpon>ucChecker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDeskCell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDeskCell.Designer.cs">
+      <DependentUpon>ucDeskCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDesk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDesk.Designer.cs">
+      <DependentUpon>ucDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucGameInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucGameInfo.Designer.cs">
+      <DependentUpon>ucGameInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Forms\StartPageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StartPageForm.Designer.cs">
+      <DependentUpon>StartPageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameTuning\SoundEffect.cs" />
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CheckerForm.resx">
+      <DependentUpon>CheckerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucChecker.resx">
+      <DependentUpon>ucChecker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDeskCell.resx">
+      <DependentUpon>ucDeskCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDesk.resx">
+      <DependentUpon>ucDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucGameInfo.resx">
+      <DependentUpon>ucGameInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StartPageForm.resx">
+      <DependentUpon>StartPageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -76,10 +136,40 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\black_checkers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_checkers.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Checkers.GameEngine\Checkers.GameEngine.csproj">
       <Project>{c8e7477e-ed36-4ce8-a25b-8d85629bb2d3}</Project>
       <Name>Checkers.GameEngine</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_checkers_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_checkers_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkers_Start_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkers_Start_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Checkers.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Click.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Win.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

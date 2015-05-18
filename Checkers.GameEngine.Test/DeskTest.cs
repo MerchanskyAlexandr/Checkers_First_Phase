@@ -290,12 +290,16 @@ namespace Checkers.GameEngine.Test
             desk.GetCheckersOnDesks.Add(chDD);
 
             Point p1 = new Point(2, 0);
-            Point p2 = new Point(2, 2);
-            Point p3 = new Point(2, 4);
+            Point p2 = new Point(2, 4);
+            Point p3 = new Point(2, 2);
+
             List<CheckerOnDesk> list1 = new List<CheckerOnDesk>();
             list1.Add(desk.GetCheckerOnDesk(p1));
-            list1.Add(desk.GetCheckerOnDesk(p3));
             list1.Add(desk.GetCheckerOnDesk(p2));
+            list1.Add(desk.GetCheckerOnDesk(p3));
+
+            desk.GetCheckersOnDesks.Remove(desk.GetCheckerOnDesk(new Point(2, 2)));
+            desk.GetCheckersOnDesks.Add(new CheckerOnDesk(ColorType.White, CheckerStatus.Simple, new Point(2, 2)));
 
             Assert.IsTrue(desk.CheckersHaveToBit(ColorType.White).SequenceEqual(list1));
             Assert.IsTrue(desk.CheckersHaveToBit(ColorType.Black).SequenceEqual(new List<CheckerOnDesk>()));
@@ -324,6 +328,9 @@ namespace Checkers.GameEngine.Test
             list1.Add(desk.GetCheckerOnDesk(p3));
             list1.Add(desk.GetCheckerOnDesk(p4));
             list1.Add(desk.GetCheckerOnDesk(p2));
+
+            desk.GetCheckersOnDesks.Remove(desk.GetCheckerOnDesk(new Point(2, 2)));
+            desk.GetCheckersOnDesks.Add(new CheckerOnDesk(ColorType.White, CheckerStatus.Simple, new Point(2, 2)));
 
             Assert.IsTrue(desk.ChekersToMove(ColorType.White).SequenceEqual(list1));
         }
@@ -407,6 +414,9 @@ namespace Checkers.GameEngine.Test
         {
             Desk desk = new Desk();
             desk.StartPosition();
+
+            desk.GetCheckersOnDesks.Remove(desk.GetCheckerOnDesk(new Point(2, 2)));
+            desk.GetCheckersOnDesks.Add(new CheckerOnDesk(ColorType.White, CheckerStatus.King, new Point(2, 2)));
 
             Point p1 = new Point(2, 2);
             CheckerOnDesk chD1 = desk.GetCheckerOnDesk(p1);

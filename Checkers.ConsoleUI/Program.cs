@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 using Checkers.GameEngine;
 using System.Drawing;
 using System.IO;
-//Rename Checkers to Checkers.ConsoleUI
+
 namespace Checkers
 {
     class Program
     {
-        //Додати класи і методи реалізації в консолі, і запустити їх в Main
         static void Main(string[] args)
         {
             string messageEndGame;
             string messageMove = "White Player is moving";
             GameType typeOfGame;
             Player currentPlayer;
+            string message;
 
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.ForegroundColor = ConsoleColor.Black;
@@ -25,9 +25,10 @@ namespace Checkers
 
             typeOfGame = EnterTypeOfGame();
             Game game = new Game(typeOfGame);
+
             if (typeOfGame == GameType.SinglePlayer)
             {
-                while (!game.IsExit(out messageEndGame))
+                while (!game.IsExit())
                 {
                     List<Point> lightPoints = new List<Point>();
                     Console.Clear();
@@ -36,20 +37,18 @@ namespace Checkers
                     {
                         PrintPoints(lightPoints);
                     }
-                    if (messageMove.Length != 0)
-                    {
-                        Console.WriteLine(messageMove);
-                    }
+                    Console.WriteLine();
                     PrintDesk(game.GameDesk);
                     Console.WriteLine();
                     Point point = EnterPoint();
-                    game.RunGameWithComputer(point, out messageMove);
+                    game.RunGameWithComputer(point);
                 }
+                Console.WriteLine("END GAME. {0} wins.", game.WinnerColor);
             }
 
             if (typeOfGame == GameType.MultyPlayer)
             {
-                while (!game.IsExit(out messageEndGame))
+                while (!game.IsExit())
                 {
                     List<Point> lightPoints = new List<Point>();
                     Console.Clear();
@@ -65,6 +64,7 @@ namespace Checkers
                     Point point = EnterPoint();
                     game.RunGame(point);
                 }
+                Console.WriteLine("END GAME. {0} wins.", game.WinnerColor);
             }
         }
 
