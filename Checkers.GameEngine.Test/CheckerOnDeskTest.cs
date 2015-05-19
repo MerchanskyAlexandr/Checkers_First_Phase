@@ -52,8 +52,7 @@ namespace Checkers.GameEngine.Test
         [ExpectedException(typeof(InvalidCastException))]
         public void EqualsTest_WrongParam()
         {
-            var chD = new CheckerOnDesk(ColorType.White, CheckerStatus.Simple, new Point(1, 1));
-
+            CheckerOnDesk chD = new CheckerOnDesk(ColorType.White, CheckerStatus.Simple, new Point(1, 1));
             Assert.IsTrue(!chD.Equals(5));
         }
 

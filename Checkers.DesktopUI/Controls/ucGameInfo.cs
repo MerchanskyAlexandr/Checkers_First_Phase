@@ -28,6 +28,7 @@ namespace Checkers.DesktopUI.Controls
         {
             lbWhiteCount.Text = DeskUI.TheGame.GameDesk.CountOfCheckers(ColorType.White).ToString();
             lbBlackCount.Text = DeskUI.TheGame.GameDesk.CountOfCheckers(ColorType.Black).ToString();
+            lblGameType.Text = DeskUI.TheGame.TypeOfGame.ToString();
             pboxCurrentPlayer.BackgroundImage = (DeskUI.TheGame.CurrentPlayer.Color == ColorType.White) ?
                         Properties.Resources.yellow_checkers :
                         Properties.Resources.black_checkers;

@@ -40,16 +40,11 @@ namespace Checkers.GameEngine
                 _movingChecker = value;
             }
         }
-
         public Desk Desk
         {
             get
             {
                 return this._desk;
-            }
-            set
-            {
-                this._desk = value;
             }
         }
 

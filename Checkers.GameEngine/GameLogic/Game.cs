@@ -110,14 +110,12 @@ namespace Checkers.GameEngine
         {
             bool isExit = false;
 
-            if (GameDesk.CountOfCheckers(ColorType.White) == 0 ||
-                GameDesk.ChekersToMove(ColorType.White).Count == 0)
+            if (GameDesk.CountOfCheckers(ColorType.White) == 0)
             {
                 isExit = true;
                 _winnerColor = ColorType.Black;
             }
-            if (GameDesk.CountOfCheckers(ColorType.Black) == 0 ||
-                GameDesk.ChekersToMove(ColorType.Black).Count == 0)
+            if (GameDesk.CountOfCheckers(ColorType.Black) == 0)
             {
                 isExit = true;
                 _winnerColor = ColorType.White;

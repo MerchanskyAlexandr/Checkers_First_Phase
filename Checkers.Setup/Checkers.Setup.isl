@@ -340,9 +340,9 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>Checkers.DesktopUI.exe</td><td>{C0C5B315-44FD-4D53-9D74-DC6CB7953E38}</td><td>INSTALLDIR</td><td>2</td><td/><td>checkers.desktopui.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Checkers.DesktopUI.vshost.exe</td><td>{25FC4542-BFC2-4A1F-949B-698E74ADF1AD}</td><td>INSTALLDIR</td><td>2</td><td/><td>checkers.desktopui.vshost.ex</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>GameEngine.dll</td><td>{D0B265B4-EC10-4C17-ABD3-DE7357EFDD89}</td><td>INSTALLDIR</td><td>2</td><td/><td>gameengine.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Checkers.DesktopUI.exe</td><td>{DAF38760-607B-4FD8-91FF-F2ACFBF0BC9C}</td><td>INSTALLDIR</td><td>2</td><td/><td>checkers.desktopui.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Checkers.DesktopUI.vshost.exe</td><td>{221CFEC4-F84D-470A-BED7-7271B6A0CD3B}</td><td>INSTALLDIR</td><td>2</td><td/><td>checkers.desktopui.vshost.ex</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>GameEngine.dll</td><td>{F2C51A81-16C8-4C31-9E1C-E9A5730E2FDE}</td><td>INSTALLDIR</td><td>2</td><td/><td>gameengine.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{A9BC08FC-AA0B-45E9-91E1-16F24E5944D6}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>NewComponent1</td><td>{E3B0568C-963B-4E5D-AFC4-2026F89ABEFF}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
@@ -1144,7 +1144,7 @@
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
 		<row><td>HOME</td><td>ProgramFilesFolder</td><td>Home</td><td/><td>0</td><td/></row>
-		<row><td>INSTALLDIR</td><td>NEW_DIRECTORY1</td><td>.</td><td/><td>0</td><td/></row>
+		<row><td>INSTALLDIR</td><td>NEW_DIRECTORY2</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
 		<row><td>ISMyCompanyDir</td><td>ProgramFilesFolder</td><td>MYCOMP~1|My Company Name</td><td/><td>0</td><td/></row>
 		<row><td>ISMyProductDir</td><td>ISMyCompanyDir</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
@@ -1153,6 +1153,7 @@
 		<row><td>MY_PRODUCT_NAME</td><td>HOME</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>MyPicturesFolder</td><td>TARGETDIR</td><td>.:MyPict~1|MyPictures</td><td/><td>0</td><td/></row>
 		<row><td>NEW_DIRECTORY1</td><td>HOME</td><td>Checkers</td><td/><td>0</td><td/></row>
+		<row><td>NEW_DIRECTORY2</td><td>ProgramFilesFolder</td><td>Checkers</td><td/><td>0</td><td/></row>
 		<row><td>NetHoodFolder</td><td>TARGETDIR</td><td>.:NetHood</td><td/><td>0</td><td/></row>
 		<row><td>PersonalFolder</td><td>TARGETDIR</td><td>.:Personal</td><td/><td>0</td><td/></row>
 		<row><td>PrimaryVolumePath</td><td>TARGETDIR</td><td>.:Primar~1|PrimaryVolumePath</td><td/><td>0</td><td/></row>
@@ -1885,14 +1886,13 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>checkers.desktopui.exe</td><td>Checkers.DesktopUI.exe</td><td>CHECKE~1.EXE|Checkers.DesktopUI.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_INSTALL_18_05\Checkers\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.exe</td><td>1</td><td/></row>
-		<row><td>checkers.desktopui.exe.confi</td><td>ISX_DEFAULTCOMPONENT</td><td>CHECKE~1.CON|Checkers.DesktopUI.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_INSTALL_18_05\Checkers\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.exe.config</td><td>1</td><td/></row>
-		<row><td>checkers.desktopui.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>CHECKE~1.PDB|Checkers.DesktopUI.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_INSTALL_18_05\Checkers\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.pdb</td><td>1</td><td/></row>
-		<row><td>checkers.desktopui.vshost.ex</td><td>Checkers.DesktopUI.vshost.exe</td><td>CHECKE~1.EXE|Checkers.DesktopUI.vshost.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_INSTALL_18_05\Checkers\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.vshost.exe</td><td>1</td><td/></row>
-		<row><td>checkers.desktopui.vshost.ex1</td><td>ISX_DEFAULTCOMPONENT</td><td>CHECKE~1.CON|Checkers.DesktopUI.vshost.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_INSTALL_18_05\Checkers\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.vshost.exe.config</td><td>1</td><td/></row>
-		<row><td>checkers.desktopui.vshost.ex2</td><td>ISX_DEFAULTCOMPONENT</td><td>CHECKE~1.MAN|Checkers.DesktopUI.vshost.exe.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_INSTALL_18_05\Checkers\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.vshost.exe.manifest</td><td>1</td><td/></row>
-		<row><td>gameengine.dll</td><td>GameEngine.dll</td><td>GAMEEN~1.DLL|GameEngine.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_INSTALL_18_05\Checkers\Checkers.DesktopUI\bin\Release\GameEngine.dll</td><td>1</td><td/></row>
-		<row><td>gameengine.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>GAMEEN~1.PDB|GameEngine.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_INSTALL_18_05\Checkers\Checkers.DesktopUI\bin\Release\GameEngine.pdb</td><td>1</td><td/></row>
+		<row><td>checkers.desktopui.exe</td><td>Checkers.DesktopUI.exe</td><td>CHECKE~1.EXE|Checkers.DesktopUI.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_19_05_Hub_LoadFromHub\Checkers_First_Phase-DestopUI\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.exe</td><td>1</td><td/></row>
+		<row><td>checkers.desktopui.exe.confi</td><td>ISX_DEFAULTCOMPONENT</td><td>CHECKE~1.CON|Checkers.DesktopUI.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_19_05_Hub_LoadFromHub\Checkers_First_Phase-DestopUI\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.exe.config</td><td>1</td><td/></row>
+		<row><td>checkers.desktopui.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>CHECKE~1.PDB|Checkers.DesktopUI.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_19_05_Hub_LoadFromHub\Checkers_First_Phase-DestopUI\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.pdb</td><td>1</td><td/></row>
+		<row><td>checkers.desktopui.vshost.ex</td><td>Checkers.DesktopUI.vshost.exe</td><td>CHECKE~1.EXE|Checkers.DesktopUI.vshost.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_19_05_Hub_LoadFromHub\Checkers_First_Phase-DestopUI\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.vshost.exe</td><td>1</td><td/></row>
+		<row><td>checkers.desktopui.vshost.ex1</td><td>ISX_DEFAULTCOMPONENT</td><td>CHECKE~1.CON|Checkers.DesktopUI.vshost.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_19_05_Hub_LoadFromHub\Checkers_First_Phase-DestopUI\Checkers.DesktopUI\bin\Release\Checkers.DesktopUI.vshost.exe.config</td><td>1</td><td/></row>
+		<row><td>gameengine.dll</td><td>GameEngine.dll</td><td>GAMEEN~1.DLL|GameEngine.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_19_05_Hub_LoadFromHub\Checkers_First_Phase-DestopUI\Checkers.DesktopUI\bin\Release\GameEngine.dll</td><td>1</td><td/></row>
+		<row><td>gameengine.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>GAMEEN~1.PDB|GameEngine.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Андрій\ПРОГРАМУВАННЯ\EPAM lab\ШАШКИ_Мій Проект\Checkers_WinForm_19_05_Hub_LoadFromHub\Checkers_First_Phase-DestopUI\Checkers.DesktopUI\bin\Release\GameEngine.pdb</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2039,9 +2039,9 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>Checkers.DesktopUI.exe</td><td/><td/><td>_F88C5999_9295_4203_A61E_FB2BB575B426_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Checkers.DesktopUI.vshost.exe</td><td/><td/><td>_63839F61_536F_401E_9D6D_5EA0ED38D660_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>GameEngine.dll</td><td/><td/><td>_369A3AD5_6FA6_43C0_9906_9A25A2F81FA1_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Checkers.DesktopUI.exe</td><td/><td/><td>_A60AEFA5_1553_4EEB_BFC5_16A10F811B41_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Checkers.DesktopUI.vshost.exe</td><td/><td/><td>_5D9E4C90_95AD_4205_9D79_26EEE3004442_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>GameEngine.dll</td><td/><td/><td>_7E7576AB_A5E4_4648_BF95_CFA3025E9CF3_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_111BCB72_F92C_4684_A5F8_C1B167D669FF_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>NewComponent1</td><td/><td/><td>_4365E7A0_E7C5_4086_9873_9A3E1456BBF3_FILTER</td><td/><td/><td/><td/></row>
 	</table>
@@ -2660,7 +2660,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Home</td><td>0</td><td/><td>-1834785806</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Home</td><td>0</td><td/><td>-1700579021</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-1834785806</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-1834785806</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-1834761453</td></row>
@@ -3475,6 +3475,8 @@
 		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1033</td><td>This setup was built with an evaluation version of InstallShield and can only be launched from setup.exe.</td><td>0</td><td/><td>-1834785806</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>Checkers</td><td>0</td><td/><td>-1834810126</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>LAUNCH~1.EXE|Launch Checkers.DesktopUI.vshost.exe</td><td>0</td><td/><td>-1834795822</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>Checker</td><td>0</td><td/><td>-1700562573</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>LAUNCH~1.EXE|Launch Checkers.DesktopUI.vshost.exe</td><td>0</td><td/><td>-1700540077</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>-1834785806</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>-1834785806</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>-1834785806</td></row>
@@ -3763,9 +3765,10 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>-1834785806</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>-1834785806</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-1834785806</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.Home.com</td><td>0</td><td/><td>-1834785806</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>Home</td><td>0</td><td/><td>-1834785806</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.Home.com</td><td>0</td><td/><td>-1700579021</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>Home</td><td>0</td><td/><td>-1700579021</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>Checkers</td><td>0</td><td/><td>-1834810126</td></row>
+		<row><td>ID_STRING4</td><td>1033</td><td>Checker</td><td>0</td><td/><td>-1700560525</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-1834785806</td></row>
 	</table>
 
@@ -3874,6 +3877,8 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
+		<row><td>Checkers.DesktopUI_03EE1D51E0F94849991EDBC0BECD36B1.exe</td><td/><td>&lt;VSSolutionFolder&gt;\Checkers.DesktopUI\Resources\Icon_Checkers.ico</td><td>0</td></row>
+		<row><td>Checkers.DesktopUI_2614202ED4D94152BA8456611D5D21E9.exe</td><td/><td>&lt;VSSolutionFolder&gt;\Checkers.DesktopUI\Resources\Icon_Checkers.ico</td><td>0</td></row>
 		<row><td>Checkers.DesktopUI_5827E40FA7894420B205C9227B7BA407.exe</td><td/><td>&lt;VSSolutionFolder&gt;\Checkers.DesktopUI\Resources\Icon_Checkers.ico</td><td>0</td></row>
 		<row><td>Checkers.DesktopUI_6613D618D7EC4770B6AAF2F612761567.exe</td><td/><td>&lt;VSSolutionFolder&gt;\Checkers.DesktopUI\Resources\Icon_Checkers.ico</td><td>0</td></row>
 	</table>
@@ -4461,8 +4466,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
 		<row><td>Checkers.DesktopUI.exe</td><td>Checkers.DesktopUI.exe</td><td/><td>checkers</td><td>2</td></row>
-		<row><td>FileKey1</td><td>Checkers.DesktopUI.exe</td><td/><td>home</td><td>2</td></row>
-		<row><td>FileKey2</td><td>Checkers.DesktopUI.exe</td><td/><td>checkers</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4548,8 +4551,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>Checkers.DesktopUI.exe</td><td>checkers</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>Checkers.DesktopUI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>Checkers.DesktopUI_5827E40FA7894420B205C9227B7BA407.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>Checkers.DesktopUI.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>Checkers.DesktopUI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>Checkers.DesktopUI_6613D618D7EC4770B6AAF2F612761567.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>Checkers.DesktopUI.exe</td><td>checkers</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>Checkers.DesktopUI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>Checkers.DesktopUI_03EE1D51E0F94849991EDBC0BECD36B1.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>Checkers.DesktopUI.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>Checkers.DesktopUI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>Checkers.DesktopUI_2614202ED4D94152BA8456611D5D21E9.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

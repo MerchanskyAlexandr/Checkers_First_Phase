@@ -129,8 +129,20 @@ namespace Checkers.GameEngine.Test
             Player player = new Player(desk, ColorType.White);
             player.Move(p);
             player.Move(pp);
+            player.MovingChecker = chD2;
 
             Assert.AreEqual(3, desk.GetCheckersOnDesks.Count);
+            Assert.AreNotEqual(player.MovingChecker, chD);
+        }
+
+        [TestMethod]
+        public void TestMovingChecker()
+        {
+            Game game = new Game(GameType.SinglePlayer);
+            game.RunGameWithComputer(new Point(2, 2));
+            Assert.IsTrue(game.CurrentPlayer.MovingChecker.Color == ColorType.White);
+
+            game.RunGameWithComputer(new Point(2, 2));
         }
     }
 }

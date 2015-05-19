@@ -34,6 +34,7 @@
             this.lbBlackCount = new System.Windows.Forms.Label();
             this.chboxSound = new System.Windows.Forms.CheckBox();
             this.pboxCurrentPlayer = new System.Windows.Forms.PictureBox();
+            this.lblGameType = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbWhite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBlack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxCurrentPlayer)).BeginInit();
@@ -42,7 +43,7 @@
             // pbWhite
             // 
             this.pbWhite.Image = global::Checkers.DesktopUI.Properties.Resources.yellow_checkers;
-            this.pbWhite.Location = new System.Drawing.Point(17, 16);
+            this.pbWhite.Location = new System.Drawing.Point(17, 48);
             this.pbWhite.Name = "pbWhite";
             this.pbWhite.Size = new System.Drawing.Size(30, 30);
             this.pbWhite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -52,7 +53,7 @@
             // pbBlack
             // 
             this.pbBlack.Image = global::Checkers.DesktopUI.Properties.Resources.black_checkers;
-            this.pbBlack.Location = new System.Drawing.Point(17, 63);
+            this.pbBlack.Location = new System.Drawing.Point(17, 95);
             this.pbBlack.Name = "pbBlack";
             this.pbBlack.Size = new System.Drawing.Size(30, 30);
             this.pbBlack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -63,7 +64,7 @@
             // 
             this.lbWhiteCount.AutoSize = true;
             this.lbWhiteCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbWhiteCount.Location = new System.Drawing.Point(65, 21);
+            this.lbWhiteCount.Location = new System.Drawing.Point(65, 53);
             this.lbWhiteCount.Name = "lbWhiteCount";
             this.lbWhiteCount.Size = new System.Drawing.Size(34, 25);
             this.lbWhiteCount.TabIndex = 2;
@@ -73,7 +74,7 @@
             // 
             this.lbBlackCount.AutoSize = true;
             this.lbBlackCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbBlackCount.Location = new System.Drawing.Point(65, 68);
+            this.lbBlackCount.Location = new System.Drawing.Point(65, 100);
             this.lbBlackCount.Name = "lbBlackCount";
             this.lbBlackCount.Size = new System.Drawing.Size(34, 25);
             this.lbBlackCount.TabIndex = 3;
@@ -94,18 +95,28 @@
             // pboxCurrentPlayer
             // 
             this.pboxCurrentPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pboxCurrentPlayer.Location = new System.Drawing.Point(17, 146);
+            this.pboxCurrentPlayer.Location = new System.Drawing.Point(17, 163);
             this.pboxCurrentPlayer.Name = "pboxCurrentPlayer";
             this.pboxCurrentPlayer.Size = new System.Drawing.Size(82, 75);
             this.pboxCurrentPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pboxCurrentPlayer.TabIndex = 6;
             this.pboxCurrentPlayer.TabStop = false;
             // 
+            // lblGameType
+            // 
+            this.lblGameType.AutoSize = true;
+            this.lblGameType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblGameType.Location = new System.Drawing.Point(17, 14);
+            this.lblGameType.Name = "lblGameType";
+            this.lblGameType.Size = new System.Drawing.Size(0, 20);
+            this.lblGameType.TabIndex = 7;
+            // 
             // ucGameInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.lblGameType);
             this.Controls.Add(this.pboxCurrentPlayer);
             this.Controls.Add(this.chboxSound);
             this.Controls.Add(this.lbBlackCount);
@@ -130,5 +141,6 @@
         private System.Windows.Forms.Label lbBlackCount;
         private System.Windows.Forms.CheckBox chboxSound;
         private System.Windows.Forms.PictureBox pboxCurrentPlayer;
+        private System.Windows.Forms.Label lblGameType;
     }
 }

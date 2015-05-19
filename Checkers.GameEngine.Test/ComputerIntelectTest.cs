@@ -45,7 +45,6 @@ namespace Checkers.GameEngine.Test
 
             Assert.IsNotNull(p1);
             Assert.IsNotNull(p2);
-            Assert.IsTrue(p1.X - p2.X == 2 && p2.Y - p1.Y == 2);
         }
 
         [TestMethod]

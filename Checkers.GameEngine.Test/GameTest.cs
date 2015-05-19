@@ -58,6 +58,13 @@ namespace Checkers.GameEngine.Test
         }
 
         [TestMethod]
+        public void TestCurrentPlayer()
+        {
+            Game game = new Game(GameType.SinglePlayer);
+            Assert.IsTrue(game.CurrentPlayer.Color == ColorType.White);
+        }
+
+        [TestMethod]
         public void TestRunGameWithComputer()
         {
             Game game = new Game(GameType.SinglePlayer);
@@ -77,8 +84,15 @@ namespace Checkers.GameEngine.Test
             Game game = new Game(GameType.SinglePlayer);
 
             game.GameDesk.GetCheckersOnDesks.Clear();
+            bool isExit = game.IsExit();
 
-            Assert.IsTrue(game.IsExit() == true);
+            Assert.IsTrue(isExit == true);
+            Assert.IsNotNull(game.WinnerColor);
+
+            Assert.IsTrue(game.GameDesk.CountOfCheckers(ColorType.Black) == 0);
+            Assert.IsTrue(game.GameDesk.CountOfCheckers(ColorType.White) == 0);
+            Assert.IsTrue(game.GameDesk.ChekersToMove(ColorType.Black).Count == 0);
+            Assert.IsTrue(game.GameDesk.ChekersToMove(ColorType.White).Count == 0);
         }
     }
 }
